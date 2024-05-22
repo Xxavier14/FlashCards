@@ -1,0 +1,18 @@
+[
+    {"pregunta": "Cual es la capital de Argentina?", "respuesta": "Buenos Aires"},
+    {"pregunta": "Cual es la capital de Chile?", "respuesta": "Santiago"},
+    {"pregunta": "Cual es la capital de Uruguay?", "respuesta": "Montevideo"},
+    {"pregunta": "Cual es la capital de EEUU?", "respuesta": "Washington"},
+    {"pregunta": "Cual es la capital de Alemania?", "respuesta": "Berlin"},
+    {"pregunta": "Cual es la capital de Australia?", "respuesta": "Canberra"},
+    {"pregunta": "Cual es la capital de Francia?", "respuesta": "Paris"},
+    {"pregunta": "Cual es la capital de Italia?", "respuesta": "Roma"},
+    {"pregunta": "Cual es la capital de España?", "respuesta": "Madrid"},
+    {"pregunta": "Cual es la capital de Canadá?", "respuesta": "Ottawa"},
+    {"pregunta": "Cual es la capital de Japón?", "respuesta": "Tokio"},
+    {"pregunta": "Cual es la capital de China?", "respuesta": "Pekín"},
+    {"pregunta": "Cual es la capital de India?", "respuesta": "Nueva Delhi"},
+    {"pregunta": "Cual es la capital de México?", "respuesta": "Ciudad de México"},
+    {"pregunta": "Cual es la capital de Rusia?", "respuesta": "Moscú"},
+    {"pregunta": "Cual es la capital de Egipto?", "respuesta": "El Cairo"}
+]
