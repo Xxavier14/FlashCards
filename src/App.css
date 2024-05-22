@@ -12,10 +12,10 @@
 }
 
 .card {
-  width: 500px;
-  height: 300px;
+  width: 50vw;
+  height: 20vh;
   transition: transform 0.5s;
-  background-color: #333333;
+  background-color: #444444;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,12 +26,16 @@
   text-align: center;
   padding: 20px;
   margin-bottom: 20px;
+  user-select: none;
 }
 
-.card:hover {
-  background-color: #444444;
+@media (min-width: 1250px) {
+  .card{
+    width: 40vw;
+    height: 50vh;
+  }
 }
-
+ 
 .click {
   animation: shake 2s;
   animation-iteration-count: infinite;
@@ -52,19 +56,21 @@
 }
 
 .responseCard {
-  background-color: #525252;
+  background-color: #797979;
 }
 
 button {
-  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
   margin-top: 20px;
+  margin-bottom: 40px;
   cursor: pointer;
+
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #808080;
+  transition: background-color ease .8s ;
 }

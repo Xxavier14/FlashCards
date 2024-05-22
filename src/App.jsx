@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import './App.css';
-import data from './Data.json';
+import { useState } from "react";
+import "./App.css";
+import data from "./Data.json";
 
 function App() {
   const [pointer, setPointer] = useState(0);
@@ -13,15 +13,25 @@ function App() {
     setPregoRes(!pregoRes);
     setIsFlipping(!isFlipping);
     if (!pregoRes) {
-      if (pointer === data.length - 1) {
-        setPointer(0); // Vuelve al principio si llega al final
-        alert('Completaste todas las preguntas, van a comenzar de nuevo!')
+      if (useDefaultData || !jsonData) {
+        if (pointer === data.length - 1) {
+          setPointer(0); // Vuelve al principio si llega al final de los datos por defecto
+          alert('Se completaron todas las preguntas, comienza de nuevo desde la 1ra!')
+        } else {
+          setPointer(pointer + 1);
+        }
       } else {
-        setPointer(pointer + 1);
+        if (pointer === jsonData.length - 1) {
+          setPointer(0); // Vuelve al principio si llega al final de los datos personalizados
+          alert('Se completaron todas las preguntas, comienza de nuevo desde la 1ra!')
+        } else {
+          setPointer(pointer + 1);
+        }
       }
-      setPregoRes(!pregoRes);
     }
   };
+  
+  
 
   const handleFileInputChange = (event) => {
     const file = event.target.files[0];
@@ -33,7 +43,7 @@ function App() {
         setUseDefaultData(false);
         setPointer(0); // Reset pointer when new data is loaded
       } catch (error) {
-        console.error('Error parsing JSON file:', error);
+        console.error("Error parsing JSON file:", error);
       }
     };
     reader.readAsText(file);
@@ -49,29 +59,43 @@ function App() {
     if (useDefaultData || !jsonData) {
       return (
         <>
-          <h3 onClick={handleReResponse} className={`card ${isFlipping ? 'click' : ''} ${pregoRes ? 'card' : 'card responseCard'}`} >
-            {data[pointer][pregoRes ? 'pregunta' : 'respuesta']}
+          <h3
+            onClick={handleReResponse}
+            className={`card ${isFlipping ? "click" : ""} ${
+              pregoRes ? "card" : "card responseCard"
+            }`}
+          >
+            {data[pointer][pregoRes ? "pregunta" : "respuesta"]}
           </h3>
-          <button onClick={() => setUseDefaultData(false)}>Usar datos personalizados</button>
+          <button onClick={() => setUseDefaultData(false)}>
+            Usar datos personalizados
+          </button>
         </>
       );
     } else {
       return (
         <>
-          <h3 onClick={handleReResponse} className={`card ${isFlipping ? 'click' : ''} ${pregoRes ? 'card' : 'card responseCard'}`} >
-            {jsonData[pointer][pregoRes ? 'pregunta' : 'respuesta']}
+          <h3
+            onClick={handleReResponse}
+            className={`card ${isFlipping ? "click" : ""} ${
+              pregoRes ? "card" : "card responseCard"
+            }`}
+          >
+            {jsonData[pointer][pregoRes ? "pregunta" : "respuesta"]}
           </h3>
           <button onClick={handleUseDefaultData}>Usar datos por defecto</button>
         </>
       );
     }
-  };
+  };  
 
   return (
     <div className="fullscreen-container">
       {renderContent()}
       {!useDefaultData && (
-        <input type="file" onChange={handleFileInputChange} />
+        <>
+          <input type="file" onChange={handleFileInputChange} />
+        </>
       )}
     </div>
   );
