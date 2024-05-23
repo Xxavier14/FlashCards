@@ -17,14 +17,14 @@ function App() {
       if (useDefaultData || !jsonData) {
         if (pointer === data.length - 1) {
           setPointer(0); // Vuelve al principio si llega al final de los datos por defecto
-          alert('Se completaron todas las preguntas, comienza de nuevo desde la 1ra!')
+          alert('Se completaron todas las preguntas, comienza de nuevo desde la primera!')
         } else {
           setPointer(pointer + 1);
         }
       } else {
         if (pointer === jsonData.length - 1) {
           setPointer(0); // Vuelve al principio si llega al final de los datos personalizados
-          alert('Se completaron todas las preguntas, comienza de nuevo desde la 1ra!')
+          alert('Se completaron todas las preguntas, comienza de nuevo desde la primera!')
         } else {
           setPointer(pointer + 1);
         }
