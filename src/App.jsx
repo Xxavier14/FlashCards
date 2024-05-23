@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import data from "./Data.json";
+import { Information } from "./components/info";
 
 function App() {
   const [pointer, setPointer] = useState(0);
@@ -97,6 +98,7 @@ function App() {
           <input type="file" onChange={handleFileInputChange} />
         </>
       )}
+      <Information />
     </div>
   );
 }
