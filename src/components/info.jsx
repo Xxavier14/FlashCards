@@ -30,7 +30,7 @@ export const Information = () => {
           fill="currentColor"
         />
       </svg>
-      <div className={Info ? "container-info" : "containerinfonodisplay"}>
+      <div className={Info ? "container-info container-info-visible" : "container-info"}>
         <h4>
           Para agregar un archivo personalizado crea un documento con el formato
           .json y escribi las preguntas y respuestas de la siguente manera:

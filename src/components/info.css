@@ -4,6 +4,7 @@
     top: 60px;
     animation: shake 2s infinite;
     cursor: pointer;
+    z-index: 1000;
 }
 
 @keyframes shake {
@@ -31,9 +32,32 @@
     padding: 0px 20px 0px 20px; 
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-evenly;   
+    opacity: 0; 
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
 .containerinfonodisplay{
     display: none;
+    opacity: 0;
 }
+
+.container-info-visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+@media (max-width: 1250px) {
+
+    .information{
+        right: 30px;
+        top: 30px;
+    }
+    .container-info{
+        right: 20px;
+        top: 30px;
+        width: 80vw;
+        z-index: 200;
+    }
+  }
