@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import data from "./Data.json";
 import { Information } from "./components/info";
+import { Menu } from "./components/menu";
 
 function App() {
   const [pointer, setPointer] = useState(0);
@@ -99,6 +100,7 @@ function App() {
         </>
       )}
       <Information />
+      <Menu/>
     </div>
   );
 }

@@ -1,0 +1,23 @@
+.containerMenu{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 12vw;
+    background: #00000094;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px; 
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.headMenu{
+    padding-bottom: 30px;
+}
+
+.containerMenu h2{
+    font-size: medium;
+    background-color: #fff;
+}
