@@ -18,6 +18,18 @@
 }
 
 .containerMenu h2{
+    cursor: pointer;
     font-size: medium;
-    background-color: #fff;
+    background-color: #444444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 80%;
+    transition: transform ease 400ms;
+}
+
+.containerMenu h2:hover{
+    background-color: #6d6d6d;
+    transform: scale(1.1);
 }
