@@ -1,0 +1,13 @@
+[
+    {"pregunta": "¿Quién pintó la Mona Lisa?", "respuesta": "Leonardo da Vinci"},
+    {"pregunta": "¿Cuál es la obra más famosa de Vincent van Gogh?", "respuesta": "La noche estrellada"},
+    {"pregunta": "¿Qué movimiento artístico surgió en Italia en el siglo XV?", "respuesta": "Renacimiento"},
+    {"pregunta": "¿Quién es conocido como el padre del cubismo?", "respuesta": "Pablo Picasso"},
+    {"pregunta": "¿Qué escultura renacentista representa a un hombre desnudo en posición de atleta?", "respuesta": "David de Miguel Ángel"},
+    {"pregunta": "¿Quién es el autor de la escultura 'El Pensador'?", "respuesta": "Auguste Rodin"},
+    {"pregunta": "¿Cuál es la técnica de pintura que utiliza cera derretida?", "respuesta": "Encaústica"},
+    {"pregunta": "¿Qué movimiento artístico buscaba capturar la esencia de un objeto o escena en lugar de su apariencia real?", "respuesta": "Impresionismo"},
+    {"pregunta": "¿Quién es el autor de la obra 'El grito'?", "respuesta": "Edvard Munch"},
+    {"pregunta": "¿En qué ciudad se encuentra la Basílica de San Pedro?", "respuesta": "Roma"}
+  ]
+  

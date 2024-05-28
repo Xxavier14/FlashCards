@@ -33,3 +33,10 @@
     background-color: #6d6d6d;
     transform: scale(1.1);
 }
+
+
+@media (max-width: 1250px){
+    .containerMenu{
+        display: none;
+    }
+}
